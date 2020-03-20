@@ -1,12 +1,26 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <router-link to="/">Home</router-link>|
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
+
+<script>
+export default {
+  metaInfo: {
+    title: '首页',
+    meta: [
+      {
+        name: 'seo测试',
+        content: '网站seo测试'
+      }
+    ]
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
